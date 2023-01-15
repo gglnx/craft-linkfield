@@ -286,7 +286,7 @@ class LinkField extends ForeignField
    * @inheritDoc
    */
   public function isValueEmpty($value, ElementInterface $element): bool {
-    return (!($value instanceof Link) || $value->isEditorEmpty());
+    return false;
   }
 
 
